@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:PresentationOptions="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
+                    xmlns:local="clr-namespace:BindingProxyDemo">
+
+    <SolidColorBrush x:Key="myBrush" PresentationOptions:Freeze="True" >#FF00FF00</SolidColorBrush>
+
+    <local:BindingProxy x:Key="myProxy" PresentationOptions:Freeze="True" Data="{DynamicResource myBrush}" />
+
+</ResourceDictionary>
